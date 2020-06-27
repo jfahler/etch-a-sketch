@@ -12,6 +12,14 @@ function createPixels(gridNum){
         div.addEventListener("mouseover", function () {
             div.style.background = `${color}`; 
         }) 
+        div.addEventListener("click", function(){
+            color = "white"; 
+        })
+
+        const reset = document.getElementById("reset"); 
+        reset.addEventListener("click", function(){
+            div.style.background = "white"; 
+        })
 
         container.appendChild(div); 
     }
@@ -19,10 +27,24 @@ function createPixels(gridNum){
 }; 
 
 createPixels(input); 
- 
+
+function reset() {
+
+}; 
+
 const resetBtn = document.getElementById('reset'); 
 resetBtn.addEventListener("click", function() {
-    div.style.background = "white"; 
+    
 
 }); 
 
+
+
+const colorChoice = document.getElementById('colorChoice'); 
+colorChoice.addEventListener("click", function () {
+    color = prompt("What color do you want?"); 
+})
+
+function randomColor() {
+    color = '#'+Math.floor(Math.random()*16777215).toString(16);
+}

@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     
     <body>
@@ -9,7 +10,10 @@
             <h2>Welcome to Josh's Drawing App!</h2>
         </div>
         <div id="options">
-            <button id="reset">RESET</button>
+            <button id="reset" onclick="reset()">RESET</button>
+            <button id="eraser" onclick="eraser()">ERASER</button>
+            <button id="colorChoice" onclick="colorChoice()">CHOOSE COLOR</button>
+            <button id="randomColor" onclick="randomColor()">RANDOM COLOR</button>
         </div>
         <div id="container"></div>
         <script src="drawPad.js"></script>
