@@ -19,6 +19,7 @@ function createPixels(gridNum){
         const reset = document.getElementById("reset"); 
         reset.addEventListener("click", function(){
             div.style.background = "white"; 
+            color = "red"; 
         })
 
         container.appendChild(div); 
@@ -28,15 +29,10 @@ function createPixels(gridNum){
 
 createPixels(input); 
 
-function reset() {
-
+function canvasSize() {
+    input = prompt("What size canvas would you like? Note: numbers higher than 100 will cause lag.")
+    createPixels(input); 
 }; 
-
-const resetBtn = document.getElementById('reset'); 
-resetBtn.addEventListener("click", function() {
-    
-
-}); 
 
 
 

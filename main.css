@@ -15,10 +15,18 @@ body{
     background-color: #005f86; 
 }
 
-h2 {
-    color: whitesmoke; 
-    font-size: 2em; 
+h1 {
+    font-variant: small-caps; 
+    color: whitesmoke;
     font-family: 'Merriweather', serif;
+}
+
+p {
+    font-weight: bold; 
+    font-size: 1.2em; 
+    color: whitesmoke;
+    font-family: 'Merriweather', serif;
+    text-align: left; 
 }
 
 #options {
@@ -48,6 +56,14 @@ h2 {
     background-color: #005f86; 
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+#options button#reset {
+    background-color: #E64037; 
+}
+
+#options button#reset:hover {
+    background-color: maroon; 
 }
 
 #container {

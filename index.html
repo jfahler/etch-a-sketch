@@ -7,11 +7,14 @@
     
     <body>
         <div id="description">
-            <h2>Welcome to Josh's Drawing App!</h2>
+            <h1>Welcome to Josh's Drawing App!</h1>
+            <p>1. Click on the canvas to erase your work.</p>
+            <p>2. Try not to enter a Canvas Size greater than 100 or it may crash your browser.</p>
+            <p>Known bugs: Changing from a large canvas size (e.g. 100) to a smaller (64) leads to weird results. I recommend F5 if that happens. Also, don't expect phone support, I'm not a wizard.</p>
         </div>
         <div id="options">
             <button id="reset" onclick="reset()">RESET</button>
-            <button id="eraser" onclick="eraser()">ERASER</button>
+            <button id="canvasSize" onclick="canvasSize()">CANVAS SIZE</button>
             <button id="colorChoice" onclick="colorChoice()">CHOOSE COLOR</button>
             <button id="randomColor" onclick="randomColor()">RANDOM COLOR</button>
         </div>
