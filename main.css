@@ -6,8 +6,8 @@ body{
     background-color: #bf5700; 
   }
   
-#description {
-    position: sticky;
+#description {p
+    position: absolute; 
     padding: 1em;  
     text-align: center; 
     width: 100%; 
