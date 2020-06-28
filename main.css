@@ -6,8 +6,8 @@ body{
     background-color: #bf5700; 
   }
   
-#description {p
-    position: absolute; 
+#description {
+    position: relative; 
     padding: 1em;  
     text-align: center; 
     width: 100%; 
